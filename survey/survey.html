@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Survey</title>
+        <link href="index.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+
+    </head> 
+    <body>
+        <header>
+            <nav> 
+                <div style="display:flex;align-items:center;gap:2em;margin:10px;">
+                    <img src="./assets/img/logo1.png" height="50" width="50" alt="logo" />
+
+                    <a href="../index.html">  <h1>GRADUATE TRACER SURVEY SYSTEM</h1></a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="content-container">
+                <div class="content">
+                    <!-- content heading-->
+                        <div class="content-heading">
+                            <!--
+                            <h3>REPUBLIC OF THE PHILIPPINES</h3>
+                            <p>OFFICE OF THE PRESIDENT</p>
+                            <P>Commission on Higher Education</P>
+                            -->
+                        </div>
+                
+                    <!-- main-->
+                        <div class="content-main">
+                            <!--
+                            <p>Dear Graduate</p>
+                            <p>Good day! Please complete this GTS questionnaire as accurately & frankly as possible by checking () the box 
+                                corresponding to your response. Your answer will be used for research purposes in order to assess graduate 
+                                employability and eventually, improve course offerings of your alma mater & other universities/colleges in the 
+                                Philippines. Your answers to this survey will be treated with strictest confidentiality.
+                            </p>
+                        -->
+                            
+                          
+
+                            <h3>A. GENERAL INFORMATION</h3>
+                            <form id="GenInfo" method="post" action="add.php">
+                                        <label for="Name" >1. Name:</label>
+                                        <!--(1)-->
+                                        <!--Name-->
+                                        <input type="text" name="Name" id="Name"  placeholder="First name M.I. Last name"  required/>
+                                        <!--(2)-->
+                                        <!--Address-->
+                                        <label for="Address">2. Permanent Address:</label>
+                                        <input type="text" name="Address" id="Address" placeholder="example: Cabitan, Mandaon, Masbate "  required />
+                                        <!--(3)-->
+                                        <!--Email-->
+                                        <label for="Email">3. Email Address</label>
+                                        <input type="email" name="Email" id="Email" placeholder="example: JohnCruz@gmail.com"  required />
+                                        <!--(4)-->
+                                        <!--Contact-->
+                                        <label for="Telephone">4. Telephone Number:</label>
+                                        <input type="text" name="Telephone" id="Telephone" placeholder="telephone or other contact number(s)"  minimum="0" maximum="11" required />
+                                        <!--(5)-->
+                                        <!--MobileNumber-->
+                                        <label for="MobileNumber">5. Mobile Number:</label>
+                                        <input type="text" name="MobileNumber" id="MobileNumber" placeholder="example: 09123456789"  required />
+
+                                        <label for="CivilStatus">6. Civil Status:</label>
+                                            <div>
+                                                <div>
+                                                    <!--(6)-->
+                                                    <!--CivilStatus-->
+                                                    <input type="radio" name="CivilStatus" value="Single" required/>
+                                                    <label> Single</label>
+                                                </div>
+                                                <div>
+                                                    <!--(6)-->
+                                                    <!--CivilStatus-->
+                                                    <input type="radio" name="CivilStatus" value="Married" required/>
+                                                    <label>Married</label>
+                                                </div>
+                                                <div>
+                                                    <!--(6)-->
+                                                    <!--CivilStatus-->
+                                                    <input type="radio" name="CivilStatus" value="Separated" required/>
+                                                    <label>Separated</label>
+                                                </div>
+                                                <div>
+                                                    <!--(6)-->
+                                                    <!--CivilStatus-->
+                                                    <input type="radio" name="CivilStatus" value="Single Parent" required/>
+                                                    <label>Single Parent</label>
+                                                </div>
+                                                <div>
+                                                    <!--(6)-->
+                                                    <!--CivilStatus-->
+                                                    <input type="radio" name="CivilStatus" value="Widow or Widower" required/>
+                                                    <label>Widow or Widower</label>
+                                                </div>
+                                            </div>
+                                        <!-- TO DO: put select option here-->
+                                
+                                        <label >7. Sex:</label>
+                                            <div> 
+                                                <!--(7)-->
+                                                <!--Sex-->
+                                                <input type="radio" name="Sex" id="male"  value="male" required>
+                                                <label for="male"> male</label>
+                                                <!--(7)-->
+                                                <!--Sex-->
+                                                <input type="radio" name="Sex" id="female"  value="female" required>
+                                                <label for="female"> female</label>
+                                            </div>
+                                        
+                                        <label for="Birthday">8. Birthday:</label>
+                                        <!--(8)-->
+                                        <!--Birthday-->
+                                        <input type="date" name="Birthday" id="Birthday"  required/>
+                                        
+                                        <label for="Region">9.Region:</label>
+                                        <!--(9)-->
+                                        <!-- Script by hscripts.com -->
+                                        <select name=slist>
+                                            <script language="javascript">
+                                            var states = new Array("Region I - Ilocos Region", "Region II - Cagayan Valley", "Region III - Central Luzon", "Region IV-A - CALABARZON", "MIMAROPA Region", "Region V - Bicol Region", "Region VI - Western Visayas", "Region VII - Cental Visayas"," Region VIII - Eastern Visayas", "Region IX - Zamboanga Peninsula", "Region X - Northn Mindanao", "Region XI - Davao Region"," Region XII - SOCCSKSARGEN", "Region XIII - Caraga", "NCR - National Capital Region", "CAR - Cordillera Adminitrative Region", "BARMM - Bangsamoro Autonomous Region in Muslim MIndanao");
+                                            for(var hi=0; hi<states.length; hi++)
+                                            document.write("<option value=\""+states[hi]+"\">"+states[hi]+"</option>");
+                                            </script>
+                                        </select>
+                                        <!-- Script by hscripts.com -->
+                
+                                        <!--TO DO: Region-->
+                                        <label for="Province">10. Province:</label>
+                                        <!--10-->
+                                        <!-- Script by hscripts.com -->
+                                        <select name=slist>
+                                        <script language="javascript">
+                                        var states = new Array("Abra", "Agusan del Norte", "Agusan del Sur", "Aklan", "Albay", "Antique", "Apayao", "Aurora", "Basilan", "Bataan", "Batanes", "Batangas", "Biliran", "Benguet", "Bohol", "Bukidnon", "Bulacan", "Cagayan", "Camarines Norte", "Camarines Sur", "Camiguin", "Capiz", "Catanduanes", "Cavite", "Cebu", "Compostela", "Davao del Norte", "Davao del Sur", "Davao Oriental", "Eastern Samar", "Guimaras", "Ifugao", "Ilocos Norte", "Ilocos Sur", "Iloilo", "Isabela", "Kalinga", "Laguna", "Lanao del Norte", "Lanao del Sur", "La Union", "Leyte", "Maguindanao", "Marinduque", "Masbate", "Mindoro Occidental", "Mindoro Oriental", "Misamis Occidental", "Misamis Oriental", "Mountain Province", "Negros Occidental", "Negros Oriental", "North Cotabato", "Northern Samar", "Nueva Ecija", "Nueva Vizcaya", "Palawan", "Pampanga", "Pangasinan", "Quezon", "Quirino", "Rizal", "Romblon", "Samar", "Sarangani", "Siquijor", "Sorsogon", "South Cotabato", "Southern Leyte", "Sultan Kudarat", "Sulu", "Surigao del Norte", "Surigao del Sur", "Tarlac", "Tawi-Tawi", "Zambales", "Zamboanga del Norte", "Zamboanga del Sur", "Zamboanga Sibugay");
+                                        for(var hi=0; hi<states.length; hi++)
+                                        document.write("<option value=\""+states[hi]+"\">"+states[hi]+"</option>");
+                                        </script>
+                             
+
+                                     
+                                        <input disabled hidden>  
+                                        <label>Location of Residence</label>
+                                        <div>
+                                            <!--(11)-->
+                                            <!--CityOrMunicipality-->
+                                            <input type="radio" name="CityOrMunicipality" value="City" required/><label>  City</label> 
+                                            <input type="radio" name="CityOrMunicipality" value="Municipality"  required/><label>  Municipality</label>   
+                                        </div>
+                                        
+                                            
+                           
+                            <h3>B. EDUCATIONAL BACKGROUND</h3>
+
+                            <p>12. Educational Attainment:</p>
+                                                                       
+                            <label for="Degree" >Degree(s) & Specialization</label>
+                            <!--(12.1)-->
+                            <!--Degree-->                            
+                            <input type="text" name="Degree" id="Degree" placeholder="example: Bachelor of Science in Industrial Technology Major in Food Technology" required />
+                            
+                            <label for="College">College or University</label>
+                            <!--(12.2)-->
+                            <!--College-->
+                            <input type="text" name="College" id="College" placeholder="example: Dr. Emilio B. Espinosa, Sr. Memorial State College of Agriculture and Technology"  required />
+
+                            <label for="YearGraduated">Year Graduated</label>
+                            <!--(12.3)-->
+                            <!--YearGraduated-->
+                            <input type="text" placeholder="example: 2018" name="YearGraduated" id="YearGraduated" required />
+                           
+                            <label for="Honor">Honor(s) or Award(s) Received</label>
+                            <!--(12.4)-->
+                            <!--Honors-->
+                            <input type="text"  placeholder="example: Cum Laude" name="Honor" id="Honor" required />
+                           
+                            <label for="PassedExam">13. Professional Examination(s) Passed</label>
+                            <label for="ExamName">Name of Examination</label>
+                            <!--(13.1)-->
+                            <!--ExamName-->
+                            <input type="text" name="ExamName" id="ExamName" placeholder="example: Licensure Exam for Teachers" required />
+                           
+                            <label for="ExamDate">Date Taken</label>
+                            <!--(13.2)-->
+                            <!--ExamDate-->
+                            <input type="Date" name="ExamDate" id="ExamDate" required />
+                    
+                            <label for="ExamRating">Rating</label>
+                            <!--(13.3)-->
+                            <!--ExamRating-->
+                            <input type="text"  placeholder = "example: 88.9" name="ExamRating" id="ExamRating" required />
+                            
+                            <!--TODO:incomplete-->
+
+                            <p>14. Reason(s) for taking the course(s) or pursuing degree(s). You may
+                                check(&check;) more than one answer.
+                            </p>
+                           
+                            <div class="table14">
+                            <table >
+                                <tr>
+                                    <th> </th>
+                                    <th>Undergraduate<br/>/AB/BS</th>
+                                    <th>Graduate<br/>/MS/MA/Phd</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="HighGrades">High grades in the course or subject area(s) related to the course</label>
+
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="High grades in the course or subject area(s) related to the course"/>    
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="High grades in the course or subject area(s) related to the course"/>    
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                
+                                    <label for="UndergraduateGoodGrades">Good grades in high school</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Good grades in high school" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Good grades in high school" /> 
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    
+                                    <label for="UndergraduateInfluenceParents">Influence of parents or relatives</label>
+                                    </td>
+                                    <td>
+                                       <!--(14.1)-->
+                                       <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Influence of parents or relatives" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Influence of parents or relatives" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="UndergraduateInfluencePeer">Peer Influence</label>
+                                    </td>
+                                    <td>
+                                       <!--(14.1)-->
+                                       <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Peer Influence" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Peer Influence" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="UndergraduateInspired">Inspired by a role model</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Inspired by a role model" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Inspired by a role model" />
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td>
+                                      
+                                        <label for="UndergraduatePassion">Strong passion for the profession</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Strong passion for the profession" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Strong passion for the profession" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                <label for="UndergraduateProspectEmployment">Prospect for immediate employment</label>
+                                    </td>
+                                    <td>
+                                       <!--(14.1)-->
+                                       <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Prospect for immediate employment" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Prospect for immediate employment" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="UndergraduateAffordable">Affordable for the family</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Affordable for the family" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Affordable for the family" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        
+                                        <label for="UndergraduateProspectCompensation">Prospect of attractive compensation</label>
+                                    </td>
+                                    <td>
+                                         <!--(14.1)-->
+                                         <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Prospect of attractive compensation" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Prospect of attractive compensation" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <label for="UndergraduateAbroad">Opportunity for employment abroad</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="Opportunity for employment abroad" />
+                                    </td>
+                                    <td>
+                                        
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="Opportunity for employment abroad" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                <label for="UndergraduateNoChoice">No particular choice or no better idea</label>
+                                    </td>
+                                    <td>
+                                        <!--(14.1)-->
+                                        <!--ReasonForCourseUndergrad-->
+                                        <input type="checkbox" name="ReasonForCourseUndergrad" id="ReasonForCourseUndergrad" value="No particular choice or no better idea" />
+                                    </td>
+                                    <td>
+                                        <!--(14.2)-->
+                                        <!--ReasonForCourseGrad-->
+                                        <input type="checkbox" name="ReasonForCourseGrad" id="ReasonForCourseGrad" value="No particular choice or no better idea" />
+                                    </td>
+                                </tr>
+                                
+                            </table>
+                                <!--UndergraduateSpecify-->
+                                <label for="UndergraduateSpecify">Others, please specify</label>
+                                <input type="text" name="UndergraduateSpecify" id="UndergraduateSpecify" class="others" placeholder="please specify other reason(s) here"/>
+                            </div>
+
+                                <h3>C. TRAINING(S) / ADVANCE STUDIES ATTENDED AFTER COLLEGE</h3>
+                                <label for="Training">15a. Please list down all profesisonal or work-related training program(s) including
+                                advance studies you have attended after college. You may use extra sheet if needed.
+                                </label>
+                            <div>
+                                <label>Title of Training or Advance Study</label>
+                                <!--15.1 TrainingTitle-->
+                                <input type="text" name="TrainingTitle" id="TrainingTitle" class="others"  />
+                            </div>
+                            <div>
+                                <label>Duration and Credits Earned</label>
+                                <!--15.2 DurationAndCredits-->
+                                <input type="text" name="DurationAndCredits" id="DurationAndCredits" class="others"  />
+                            </div>
+                            <div>
+                                <label>Name of Training Institution/College/University</label>
+                                <!--15.3 Training Sponsor-->
+                                <input type="text" name="TrainingSponsor" id="TrainingSponsor" class="others"  />
+                            </div>
+                                              
+                            <!--TODO: Incomplete-->
+                            <label for="ReasonForAdvancement">15b. What made you pursue advance studies?</label>
+                            <div>
+                                <div>
+                                    <!--15.b ReasonForAdvancement-->
+                                    <label for="ReasonForAdvancement">For Promotion</label>
+
+                                   <input type="radio" name="ReasonForAdvancement"  value="For Promotion">
+                                </div>-+
+                                3
+                                <div>
+                                    <!--15.b ReasonForAdvancement-->
+                                    <label for="ReasonForAdvancement">For Professional Development</label>
+
+                                    <input type="radio" name="ReasonForAdvancement"  value="For Professional Development">
+                                </div>
+                               <div>
+                                    <!--15.b ReasonForAdvancement-->
+                                    <label for="ReasonForAdvancement">Others, please specify</label>
+
+                                    <input type="radio" name="ReasonForAdvancement" />
+                                    <!--TODO: TO FIX - OTHERS-->
+                                    <!-- <input type="text" name="other15b" id="other15b" class="others" placeholder="please specify other reason here" /> -->
+                               </div>
+                               
+                               
+                                
+                             
+                            </div>
+                            
+                            <!--TODO: Incomplete-->
+
+                            <h3>D. EMPLOYMENT DATA</h3>
+                            <label>16. Are you presently employed?</label>
+                            <div>
+                                <!--(16)-->
+                                <!--isEmployed-->
+                                <input type="radio" name="isEmployed" class="16Employed" value="Yes"/>
+                                <label for="isEmployed">Yes</label>
+                                 <!--(16)-->
+                                <!--isEmployed-->
+                                <input type="radio" name="isEmployed" class="16Employed" value="No"/>
+                                <label for="isEmployed">No</label>
+                                 <!--(16)-->
+                                 <!--isEmployed-->
+                                <input type="radio" name="isEmployed" class="16Employed" value="Never Employed"/>
+                                <label for="isEmployed">Never Employed</label>
+                            </div>
+                            <!--TODO: complete incomplete-->
+                            <label>17. Please state reason(s) why you are not yet employed. You may check
+                                more than one answer.
+                            </label>
+                            <div style="display:flex;flex-direction:column;">
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed"  value="Advance or further study" />
+                                    <label for="17FurtherStudy" > Advance or further study</label>
+                                </div>
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed"  value="Family concern and decided not to find a job" />
+                                    <label for="17FurtherStudy" > Family concern and decided not to find a job</label>
+                                </div>
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed" value="Health-related resason(s)" />
+                                    <label for="17FurtherStudy" > Health-related reason(s)</label>
+                                </div>
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed"  value="Lack of work experience" />
+                                    <label for="17FurtherStudy" > Lack of work experience</label>
+                                </div>
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed"  value="No job opportunity" />
+                                    <label for="17FurtherStudy" > No job opportunity</label>
+                                </div>
+                                <div>
+                                    <!--(17)-->
+                                    <!--ReasonForNotEmployed-->
+                                    <input type="checkbox" name="ReasonForNotEmployed"  value="Did not look for a job" />
+                                    <label for="17FurtherStudy" > Did not look for a job</label>
+                                </div>
+                                <div>
+                                    <!--TODO: TO FIX (OTHERS)-->
+                                    <!-- <input type="text" name="ReasonForNotEmployed"  placeholder="specify other reason here" /> -->
+                                </div>
+                            </div>
+                            <!--TODO: complete incomplete-->
+                            <label>18. Present Employment Status</label>
+                            <div>
+                                <div style="display:flex;flex-direction: column";>
+                                    <div>
+                                        <!--(18)-->
+                                         <!--EmploymentStatus-->
+                                        <input type="radio" name="EmploymentStatus" value="Regular or Permanent">
+                                        <label>Regular or Permanent</label>
+                                    </div>
+                                    <div>
+                                        <!--(18)-->
+                                         <!--EmploymentStatus-->
+                                        <input type="radio" name="EmploymentStatus" value="Temporary"/>
+                                        <label>Temporary</label>
+                                    </div>
+                                    <div>
+                                        <!--(18)-->
+                                        <!--EmploymentStatus-->
+                                        <input type="radio" name="EmploymentStatus" value="Casuals"/>
+                                        <label>Casual</label>
+                                    </div>
+                                    <div>
+                                        <!--(18)-->
+                                        <!--EmploymentStatus-->
+                                        <input type="radio" name="EmploymentStatus" value="Contractual" />
+                                        <label>Contractual</label>
+                                    </div>
+                                    <div>
+                                        <!--(18)-->
+                                        <!--EmploymentStatus-->
+                                        <input type="radio"  name="EmploymentStatus" value="Self-employed"/>
+                                        <label>Self-employed</label>
+                                    </div>
+                                    <p>If self-employed, what skills acquired in college were you able to apply in your work?</p>
+                                        <!--ifSelfEmployed-->1
+                                    <input type="text"  />
+                                </div>
+                            </div>
+                     
+                            <label>19. Present occupation
+                            </label>
+                                <!--(19)-->
+                                <!--PresentOccupation-->
+                                <input type="text" name="PresentOccupation" id="PresentEmployment" placeholder="Ex. Grade School Teacher, Electrical Engineer, Self-employed" />
+                                                      
+                            <label>
+                               20. Major line of business of the company you are presently employed in. Select one only from the option.
+                            </label>
+                                <!--(20)-->
+                                <!--TODO: to complete this-->
+                                <!--LineOfBusiness-->
+                                <select name="LineOfBusiness">
+                                    <option value="Agriculture, Hunting and Forestry">Agriculture, Hunting and Forestry</option>
+                                    <option value="Fishing"> Fishing</option>
+                                    <option value="Mining and Quarrying"> Mining and Quarrying</option>
+                                    <option value="Manufacturing"> Manufacturing</option>
+                                    <option value="Electricity, Gas and Water Supply">Electricity, Gas and Water Supply</option>
+                                    <option value="Construction">Construction</option>
+                                    <option value="Wholesale and Retail Trade,repair of motor vehicles, motorcycles and persona and household goods">Wholesale and Retail Trade, repair of motor vehicles
+                                    motorcycles and personal and household goods</option>
+                                    <option value="Hotels and Restaurants">Hotels and Restaurants</option>
+                                    <option value="Transport Storage and Communication"> Transport Storage and Communication</option>
+                                    <option value="Financial Intermediation">Financial Intermediation</option>
+                                    <option value="Real Estate, Renting and Business Activities"> Real Estate, Renting and Business Activities</option>
+                                    <option value="Public Administration and Defense;Compulsory">Public Administration and Defense; Compulsory </option>
+                                    <option value="Social Security"> Social Security</option>
+                                    <option value="Education"> Education</option>
+                                    <option value="Health and Social Work"> Health and Social Work</option>
+                                    <option value="Other Community, Social and Personal Service Activities"> Other Community, Social and Personal Service Activities</option>
+                                    <option value="Private Households with Employed Persons"> Private Households with Employed Persons</option>
+                                    <option value="Extra-territorial Organizations and Bodies"> Extra-territorial Organizations and Bodies</option>
+                                </select>
+                            <!--TODO: complete -->
+                            <label>
+                                21. Place of work
+                            </label>
+                           
+                                <div>
+                                    <!--21. PlaceOfWork-->
+                                    <input type="radio" name="PlaceOfWork" id="PlaceOfWork" value="Local" />
+                                    <label>Local</label>
+                                    <!--21. PlaceOfWork-->
+                                    <input type="radio" name="PlaceOfWork" id="PlaceOfWork" value="Abroad" />
+                                    <label>Abroad</label>
+                                </div>
+                              
+                            <!--TODO: edit -->
+                            <label>
+                                22. Is this your first job after college?
+                            </label>
+                                <div>
+                                    <!--22. isFirstJob-->
+                                    <input type="radio" name="isFirstJob" id="isFirstJob" value="Yes"/>
+                                    <label>Yes</label>
+                                    <input type="radio" name="isFirstJob" id="isFirstJob" value="No"/>
+                                    <label>No</label>
+                        
+                                </div>
+                                <p>if NO, proceed to Questions 26 and 27</p>
+                            <!--TODO: complete-->
+                            <label>
+                                23. What are your reason(s) for staying on the job? You may check more than one answer.
+                            </label>
+                            <div style="display:flex;flex-direction:column;">
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Salaries and benefits" />
+                                    <label>Salaries and benefits</label>
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Career challenge" />
+                                   <label>Career challenge</label> 
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Related to special skill" />
+                                    <label>Related to special skill</label>
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Proximity to residence" />
+                                    <label>Proximity to residence</label>
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Peer influence" />
+                                    <label>Peer influence</label>
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying" value="Family influence" />
+                                    <label>Family influence</label>
+                                </div>
+                                <div>
+                                    <!--23. ReasonForStaying-->
+                                    <input type="radio" name="ReasonForStaying"  />
+                                    <!--TO DO: fix others-->
+                                    <label>Other reason(s), please specify:</label>
+                                    <input type="text" class="others" placeholder="specify other reason here"/>
+                                </div>
+
+                            </div>
+                            <!--TODO: complete this-->
+                            <label>
+                                24. Is your first job related to the course you took up in college?
+                            </label>
+                            <div style="display:flex;flex-direction:column;">
+                                <div>
+                                    <!--24. isFirstJobRelated-->
+                                    <input type="radio" name="isFirstJobRelated" value="Yes"  />
+                                    <label>Yes</label>
+                                    <!--24. isFirstJobRelated-->
+                                    <input type="radio" name="isFirstJobRelated" value="No" />
+                                    <label>No</label>
+                                </div>
+                                  
+                            </div>
+                            <!-- TODO: complete this-->
+                            <label>
+                                25. What were your reasons for accepting the job? You may check more than one answer.
+                            </label>
+                            <div style="display:flex;flex-direction:column;">
+                                <div>
+                                    <!--25. ReasonForAccepting-->
+                                    <input type="radio" name="ReasonForAccepting" value="Salares & benefits" />
+                                    <label>Salaries & benefits</label>
+                                </div>
+                                <div>
+                                    <!--25. ReasonForAccepting-->
+                                    <input type="radio"  name="ReasonForAccepting" value="Career challenge"/>
+                                    <label>Career challenge</label>
+                                </div>
+                                <div>
+                                    <!--25. ReasonForAccepting-->
+                                    <input type="radio" name="ReasonForAccepting" value="Related to special skills"/>
+                                    <label>Related to special skills</label>
+                                </div>
+                                <div>
+                                    <!--25. ReasonForAccepting-->
+                                    <input type="radio" name="ReasonForAccepting" value="Proximity to residence"/>
+                                    <label>Proximity to residence</label>
+                                </div>
+                                <div>
+                                    <!--25.  ReasonForAccepting-->
+                                    <input type="radio" name="ReasonForAccepting" value="Others"/>
+                                    <label>Other reason(s), please specify</label>
+                                    <!--TODO: FIX OTHERS-->
+                                    <input type="text" name="other15b" id="other15b" class="others" placeholder="please specify other reason here" />
+                                </div>
+                            </div>
+                            <!--TODO: complete this-->
+                            <label>
+                                26. What were your reason(s) for changing job? You may check more than one answer.
+                            </label>
+                            <div style="display:flex;flex-direction:column;">
+                                <div>
+                                    <!--26. ReasonForChange-->
+                                    <input type="checkbox" name="ReasonForChange" value="Salaries & benefits" />
+                                    <label>Salaries & benefits</label>
+                                </div>
+                                <div>
+                                    <!--26. ReasonForChange-->
+                                    <input type="checkbox" name="ReasonForChange" value="Career challenge" />
+                                    <label>Career challenge</label>
+                                </div>
+                                <div>
+                                    <!--26. ReasonForChange-->
+                                    <input type="checkbox" name="ReasonForChange" value="Related to special skills"/>
+                                    <label>Related to special skills</label>
+                                </div>
+                                <div>
+                                    <!--26. ReasonForChange-->
+                                    <input type="checkbox" name="ReasonForChange" value="Proximity to residence"/>
+                                    <label>Proximity to residence</label>
+                                </div>
+                                <div>
+                                    <!--26. ReasonForChange-->
+                                    <input type="checkbox" name="ReasonForChange" value="Others"/>
+                                    <!--TODO: FIX THIS-->
+                                    <label>Other reason(s), please specify</label>
+                                    <input type="text" class="others" placeholder="please specify other reason(s) here" />
+                                </div>
+                            </div>
+                            <!-- TODO: complete this-->
+                            <label>
+                                27.  How long did you stay in your first job?
+                            </label>
+                                <div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="Less than a month" />
+                                        <label>Less than a month</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="1 to 6 months" />
+                                        <label>1 to 6 months</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="7 to 11 months"/>
+                                        <label>7 to 11 months</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="1 year to less than 2 years" />
+                                        <label> 1 year to less than 2 years</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="2 years to less than 3 years"/>
+                                        <label>2 years to less than 3 years</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="3 years to less than 4 years"/>
+                                        <label>3 years to less than 4 years</label>
+                                    </div>
+                                    <div>
+                                        <!--27. LengthOfFirstJob-->
+                                        <input type="radio" name="LengthOfFirstJob" value="Others" />
+                                        <!--TODO: FIX THIS OTHERS-->
+                                        <label>Others, please specify</label>
+                                        <input type="text" class="others" placeholder="please specify other reason(s) here"/>
+                                    </div>
+                                </div>
+                            <!-- TODO: complete this-->
+                            <label>
+                                28. How did you find your first job?
+                            </label>
+                            
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="Response to an adverstisement"/>
+                                    <label>Response to an advertisement</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="As walk-in applicant"/>
+                                    <label>As walk-in applicant</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="Recommended by someone"/>
+                                    <label>Recommended by someone</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="Information from friends"/>
+                                    <label>Information from friends</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio"name="FirstJobFound"  value="Arranged by school's job placement officer"/>
+                                    <label>Arranged by school&apos;s job placement officer</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="Family business"/>
+                                    <label>Family business</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio" name="FirstJobFound" value="Job Fair or Public Employment Service(PESO)" />
+                                    <label>Job Fair or  Public Employment Service (PESO)</label>
+                                </div>
+                                <div>
+                                    <!--28. firstJobFound-->
+                                    <input type="radio"  name="FirstJobFound" value="Others"/> 
+                                    <label> Others, please specify</label>
+                                    <input type="text"i class="others" placeholder="please specify other reason(s) here" />
+                                </div>
+                            <!-- TODO: complete this-->
+                            <label>
+                                29. How long did it take you to land your first job?
+                            </label>
+                            <div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="Less than a month" />
+                                    <label>Less than a month</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="1 to 6 months"/>
+                                    <label>1 to 6 months</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="7 to 11 months" />
+                                    <label>7 to 11 months</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="1 year to less than 2 years" />
+                                    <label> 1 year to less than 2 years</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="2 years to less than 3 years" />
+                                    <label>2 years to less than 3 years</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="3 years to less than 4 years"/>
+                                    <label>3 years to less than 4 years</label>
+                                </div>
+                                <div>
+                                    <!--29. LengthToFindFirstJob-->
+                                    <input type="radio" name="LengthToFindFirstJob" value="Others"/>
+                                    <!--TODO: FIX THIS-->
+                                    <label>Others, please specify</label>
+                                    <input type="text" class="others" placeholder="please specify other reason(s) here" />
+                                </div>
+                            </div> 
+                            <!-- TODO: complete this-->
+                            <label>
+                                30. Job Level Position
+                            </label>
+                                <table>
+                                    <tr>
+                                        <th>
+                                            Job Level
+                                        </th>
+                                        <th>
+                                            30.1. First Job
+                                        </th>
+                                        <th>
+                                            30.2 Current or Present Job
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>Rank or Clerical</td>
+
+                                        <td> 
+                                            <!--30.1 firstJobLevel-->
+                                            <input type="radio" name="firstJobLevel" id="firstJobLevel" value="Rank or Clerical"/>
+                                        </td>
+                                        <td> 
+                                            <!--30.2 currentJobLevel-->
+                                            <input type="radio" name="currentJobLevel " id="currentJobLevel" value="Rank or Clerical"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Professional, Technical or Supervisory</td>
+                                        <td> 
+                                            <!--30.1 firstJobLevel-->
+                                            <input type="radio"name="firstJobLevel" id="firstJobLevel" value="Professional, Technical or Supervisory"/>
+                                        </td>
+                                        <td> 
+                                            <!--30.2 currentJobLevel-->
+                                            <input type="radio" name="currentJobLevel" id="currentJobLevel" value="Professional, Technical or Supervisory"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Managerial or Executive</td>
+                                        <td> 
+                                            <!--30.1 firstJobLevel-->
+                                            <input type="radio"name="firstJobLevel" id="firstJobLevel" value="Managerial or Executive"/>
+                                        </td>
+                                        <td> 
+                                            <!--30.2 currentJobLevel-->
+                                            <input type="radio" name="currentJobLevel" id="currentJobLevel" value="Managerial or Executive"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Self-employed</td>
+                                        <td> 
+                                            <!--30.1 firstJobLevel-->
+                                            <input type="radio"name="firstJobLevel" id="firstJobLevel" value="Self-employed"/>
+                                        </td>
+                                        <td> 
+                                            <!--30.2 currentJobLevel-->
+                                            <input type="radio" name="currentJobLevel" id="currentJobLevel" value="Self-employed"/>
+                                        </td>
+                                    </tr>
+                                   
+                                </table>
+                            <!--TODO: complete this-->
+                            
+                            <!--todo: complete this-->
+                            <label>
+                                31. What is your initial gross monthly earning in your first job after college?
+                            </label>
+                            <div>
+                                <div>
+                                    <!--31. initialGross-->
+                                    <input type="radio" name="initialGross" value="Below P5,000.00"/>
+                                    <label> Below P5,000.00</label>
+                                </div>
+                                <div>
+                                     <!--31. initialGross-->
+                                    <input type="radio" name="initialGross" value="P5,000.00 to less than P10,000.00"/>
+                                    <label> P5,000.00 to less than P10,000.00</label>
+                                </div>
+                                <div>
+                                     <!--31. initialGross-->
+                                    <input type="radio" name="initialGross" value="P10,000.00 to less than P15,000.00"/>
+                                    <label> P10,000.00 to less than P15,000.00</label>
+                                </div>
+                                <div>
+                                     <!--31. initialGross-->
+                                    <input type="radio" name="initialGross" value=" P20,000.00 to less than P25,000.00"/>
+                                    <label> P20,000.00 to less than P25,000.00</label>
+                                </div>
+                                <div>
+                                     <!--31. initialGross-->
+                                    <input type="radio" name="initialGross" value="P25,000.00 and above"/>
+                                    <label> P25,000.00 and above</label>
+                                </div>
+                            </div>
+                            <!--Todo: -->
+                            <label>
+                                32. Was the curriculum you had in college relevant to your first job?
+                            </label>
+                            <div>
+                                <!--32. isRelevant-->
+                                <input type="radio" name="isRelevant" value="Yes"/>
+                                <label>Yes</label>
+                                <!--32. isRelevant-->
+                                <input type="radio" name="isRelevant" value="No"/>
+                                <label> No</label>
+                            </div>
+                            <!--TODO: fix - if yes, it will be available, if not, not available-->
+                            <label>
+                                33. If YES, what competencies learned in college did you find very useful in your first job? You 
+                                may check more than one answer.
+                            </label>
+                            <!--TODO: TEXT AREA FOR SUGGESTIONS-->
+                            <label>
+                                List down suggestions to further improve your course curriculum
+                            </label>
+                            <!--todo-->
+                           <!-- <p>
+                                Thank you for taking time out to fill out this questionnaire. Please return this GTS to your Institution. 
+                                Being one of the alumni of your institution, may we request you to list down the names of other college 
+                                graduates (AY 2000-2001 to AY 2003-2004) from your institution including their addresses and contact 
+                                numbers. Their participation will also be needed to make this study more meaningful and useful.
+                            </p> -->
+                        </select>
+                        <input type="submit" name="Submit" id="SubmitSurvey"  value="Submit Survey"/>
+</form>
+                        </div>
+
+                </div>
+            </div>
+        </main>
+        <!-- <footer>
+ 
+        </footer> -->
+    </body>
+</html>
